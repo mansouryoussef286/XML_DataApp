@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.XPath;
+using System.Xml.Xsl;
 
 namespace employeeForm
 {
@@ -38,7 +40,7 @@ namespace employeeForm
         {
             iterator = 0;
             //load the file
-            employeesFile.Load(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab 1\employee.xml");
+            employeesFile.Load(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml");
             //get the root element
             employees = employeesFile.DocumentElement;
             //get the tag names in array lists
@@ -103,14 +105,14 @@ namespace employeeForm
             phones[index].FirstChild.InnerText = phoneTextBox.Text;
             fillAddressElement(addressTextBox.Text, index);
             emails[index].InnerText = emailTextBox.Text;
-            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab 1\employee.xml");
+            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml");
         }
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             //get the current node
             XmlNode currentNode = employeesFile.GetElementsByTagName("employee")[iterator];
             employees.RemoveChild(currentNode);
-            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab 1\employee.xml");
+            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml");
             onload();
         }
         private void updateBtn_Click(object sender, EventArgs e)
@@ -119,7 +121,7 @@ namespace employeeForm
             phones[iterator].FirstChild.InnerText = phoneTextBox.Text;
             emails[iterator].InnerText = emailTextBox.Text;
             fillAddressElement(addressTextBox.Text, iterator);
-            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab 1\employee.xml");
+            employeesFile.Save(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml");
         }
         private void searchBtn_Click(object sender, EventArgs e)
         {
@@ -206,6 +208,22 @@ namespace employeeForm
         {
             if (searchTextBox.Text == "")
                 searchTextBox.Text = "Search by name";
+        }
+
+        private void showBrowserBtn_Click(object sender, EventArgs e)
+        {
+            ////Create a new XslTransform object.
+            //XslCompiledTransform xslt = new XslCompiledTransform();
+
+            ////Load the stylesheet.
+            //xslt.Load(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-3\empStyling.xsl");
+
+            ////Transform the data and send the output to the console.
+            //xslt.Transform(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml",
+            //    @"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-3\employee.xml");
+
+            //System.Diagnostics.Process.Start(@"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab 3\employee.xml");
+            System.Diagnostics.Process.Start("IExplore.exe", @"C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\lab-1\employee.xml");
         }
     }
 }

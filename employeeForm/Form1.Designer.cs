@@ -44,6 +44,7 @@ namespace employeeForm
             this.deleteBtn = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
+            this.showBrowserBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name
@@ -187,11 +188,22 @@ namespace employeeForm
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
+            // showBrowserBtn
+            // 
+            this.showBrowserBtn.Location = new System.Drawing.Point(391, 230);
+            this.showBrowserBtn.Name = "showBrowserBtn";
+            this.showBrowserBtn.Size = new System.Drawing.Size(133, 23);
+            this.showBrowserBtn.TabIndex = 15;
+            this.showBrowserBtn.Text = "Show in browser";
+            this.showBrowserBtn.UseVisualStyleBackColor = true;
+            this.showBrowserBtn.Click += new System.EventHandler(this.showBrowserBtn_Click);
+            // 
             // empForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 254);
+            this.Controls.Add(this.showBrowserBtn);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.deleteBtn);
@@ -233,7 +245,7 @@ namespace employeeForm
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Button searchBtn;
-
+        private System.Windows.Forms.Button showBrowserBtn;
     }
 }
 

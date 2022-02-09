@@ -18,3 +18,13 @@ C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\employeeDisplayer\employeeForm\obj\Deb
 C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\employeeDisplayer\employeeForm\obj\Debug\employeeForm.csproj.CoreCompileInputs.cache
 C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\employeeDisplayer\employeeForm\obj\Debug\employeeForm.exe
 C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\employeeDisplayer\employeeForm\obj\Debug\employeeForm.pdb
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\bin\Debug\employeeForm.exe.config
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\bin\Debug\employeeForm.exe
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\bin\Debug\employeeForm.pdb
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.csproj.AssemblyReference.cache
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.empForm.resources
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.Properties.Resources.resources
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.csproj.GenerateResource.cache
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.csproj.CoreCompileInputs.cache
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.exe
+C:\Users\Blu-Ray\OneDrive\Desktop\iti\XML\XML_DataApp\employeeForm\obj\Debug\employeeForm.pdb
